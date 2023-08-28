@@ -17,6 +17,8 @@
   background-color: rgb(10 8 42 / 93%);
   backdrop-filter: blur(18px);
   box-shadow: 0px 0px 13px #663399;
+  display: flex;
+  justify-content: space-between;
 }
 
 .noFit{
