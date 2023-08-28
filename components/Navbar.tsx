@@ -2,11 +2,12 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { styled } from "styled-components";
 import { useState } from "react";
+import { MobileNav } from "./MobileNav";
 export const Navbar = () => {
     const [isNavToggled, setIsNavToggled] = useState(false)
   return (
     <div className={styles.navbar}>
-      <LogoWrapper>
+      <LogoWrapper $height={50} $width={50}>
         <Image
           src={"/assets/kyqn-logo.png"}
           height={50}
@@ -20,15 +21,16 @@ export const Navbar = () => {
         <TogglerItem className={`${isNavToggled && 'transformed'}`}></TogglerItem>
         <TogglerItem className={`${isNavToggled && 'transformed'}`}></TogglerItem>
       </MobileNavToggler>
+      <MobileNav isNavToggled={isNavToggled} />
     </div>
   );
 };
 
-const LogoWrapper = styled.div`
+export const LogoWrapper = styled.div<{$height: number, $width: number}>`
   box-shadow: 1px 0px 10px #663399;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: ${(props) => props.$height}px;
+  height: ${(props) => props.$height}px;
   margin: auto;
   text-align: center;
   display: flex;
@@ -42,6 +44,7 @@ const MobileNavToggler = styled.div`
   grid-template-rows: 1fr 1fr 1fr;
   cursor: pointer;
   transition: padding 200ms;
+  z-index: 100;
   &.transformed{
     padding: 8px 0px;
   }

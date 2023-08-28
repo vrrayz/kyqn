@@ -24,3 +24,6 @@
 .noFit{
   object-fit: none;
 }
+.marginXAuto{
+  margin: 0px auto;
+}
