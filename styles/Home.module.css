@@ -10,6 +10,7 @@
   background-color: rgba(27, 26, 42, 0.75);
   width: 100vw;
   height: 100vh;
+  overflow: scroll;
 }
 
 .navbar{
@@ -27,3 +28,26 @@
 .marginXAuto{
   margin: 0px auto;
 }
+.heroBody{
+  /* background-color: #fff; */
+  width: 350px;
+  height: 350px;
+  margin: auto;
+  background-image: url(/assets/kyqn-logo.png);
+  background-position: center;
+  padding: 8px;
+  margin-top: 40px;
+  background-size: 200px;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.textCenter{
+  text-align: center;
+}
+.textLight{
+  color: #fff;
+}
+
+
+/* REMEBER TO WORK ON THE CONTENT SPACING FOR THE INDEX PAGE */
