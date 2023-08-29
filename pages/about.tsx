@@ -38,17 +38,6 @@ const About = () => {
             social media, all meant to give you an amazing experience.
           </Slogan>
         </section>
-        {/* <section className={styles.dFlex}>
-      <LogoWrapper $height={50} $width={50}>
-        <Image
-          src={"/assets/kyqn-logo.png"}
-          height={50}
-          width={50}
-          alt="Logo"
-          className={styles.noFit}
-        />
-      </LogoWrapper>
-      </section> */}
         <section className={styles.aboutSection}>
           <h1 className={styles.sectionHeader}>Our Story</h1>
           <Slogan className={styles.textSmall + " " + styles.sectionText}>
