@@ -31,6 +31,12 @@
 .marginXAuto {
   margin: 0px auto;
 }
+.marginYAuto {
+  margin: auto 0px;
+}
+.marginAuto {
+  margin: auto;
+}
 
 .heroBody {
   /* background-color: #fff; */

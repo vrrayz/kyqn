@@ -56,7 +56,7 @@ export default function Home() {
             <HotLinkHeading>We Are KYQN</HotLinkHeading>
             <HotLinks>
               <HotLink href={"/about"}>About</HotLink>
-              <HotLink href={"/"}>Tokenomics</HotLink>
+              <HotLink href={"/tokenomics"}>Tokenomics</HotLink>
               <HotLink href={"/"}>Docs</HotLink>
               <HotLink href={"/"}>Contact</HotLink>
             </HotLinks>

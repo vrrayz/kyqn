@@ -17,7 +17,7 @@ export const MobileNav = ({ isNavToggled }: MobileNavProps) => {
         <LinksContainer>
           <Link href={"/"}>Home</Link>
           <Link href={"/about"}>About</Link>
-          <Link href={"/"}>Tokenomics</Link>
+          <Link href={"/tokenomics"}>Tokenomics</Link>
           <Link href={"/"}>Contact</Link>
           <Link href={"/"}>Docs</Link>
           <Link href={"/"}>Dapp</Link>
