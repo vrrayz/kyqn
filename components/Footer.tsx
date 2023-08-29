@@ -34,7 +34,7 @@ export const Footer = () =>{
               height={30}
             />
           </a>
-          <a href="/">
+          <a href="https://goerli.etherscan.io/token/0x729C5fD25e2656b659479bf8dD2fff4Dbd12e90b" target="_blank">
             <Image
               src={"/assets/etherscan.svg"}
               alt={"tg"}

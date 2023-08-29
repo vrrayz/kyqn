@@ -59,6 +59,23 @@
   display: grid;
   grid-template-rows: 100vh 350px;
 }
+.aboutSection{
+  padding: 18px;
+  /* padding-bottom: 16px; */
+  margin: auto;
+}
+.sectionHeader{
+  text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+    margin: 12px 0px;
+}
+.sectionText{
+  line-height: 2;
+}
 .textMedium{
   font-family: 'Instrument Sans', sans-serif;
   font-size: 14px !important;

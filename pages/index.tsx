@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>KYQN</title>
+        <link rel="icon" href="/kyqn-logo.png" />
       </Head>
 
       <Navbar />
@@ -55,7 +55,7 @@ export default function Home() {
           >
             <HotLinkHeading>We Are KYQN</HotLinkHeading>
             <HotLinks>
-              <HotLink href={"/"}>About</HotLink>
+              <HotLink href={"/about"}>About</HotLink>
               <HotLink href={"/"}>Tokenomics</HotLink>
               <HotLink href={"/"}>Docs</HotLink>
               <HotLink href={"/"}>Contact</HotLink>
