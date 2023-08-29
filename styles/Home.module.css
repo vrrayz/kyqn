@@ -70,5 +70,8 @@
 .dFlex{
   display: flex;
 }
+.dBlock{
+  display: block;
+}
 
 /* REMEBER TO WORK ON THE CONTENT SPACING FOR THE INDEX PAGE */
