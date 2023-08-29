@@ -2,11 +2,17 @@ import { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
 import { Footer } from "./Footer";
 import { Preloader } from "./Preloader";
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+
 export const Layout = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    setTimeout(() => setIsLoading(false), 3000)
+    setTimeout(() => {
+      setIsLoading(false)
+      AOS.init()
+    }, 3000)
   },[])
   return (
     <>
