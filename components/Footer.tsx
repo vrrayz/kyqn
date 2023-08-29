@@ -20,7 +20,7 @@ export const Footer = () =>{
           </a>
           <a href="/">
             <Image
-              src={"/assets/telegram.svg"}
+              src={"/assets/twitter.svg"}
               alt={"tg"}
               width={30}
               height={30}
@@ -28,7 +28,7 @@ export const Footer = () =>{
           </a>
           <a href="/">
             <Image
-              src={"/assets/telegram.svg"}
+              src={"/assets/dextools.svg"}
               alt={"tg"}
               width={30}
               height={30}
@@ -36,23 +36,7 @@ export const Footer = () =>{
           </a>
           <a href="/">
             <Image
-              src={"/assets/telegram.svg"}
-              alt={"tg"}
-              width={30}
-              height={30}
-            />
-          </a>
-          <a href="/">
-            <Image
-              src={"/assets/telegram.svg"}
-              alt={"tg"}
-              width={30}
-              height={30}
-            />
-          </a>
-          <a href="/">
-            <Image
-              src={"/assets/telegram.svg"}
+              src={"/assets/etherscan.svg"}
               alt={"tg"}
               width={30}
               height={30}
