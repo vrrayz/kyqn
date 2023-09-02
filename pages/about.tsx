@@ -13,7 +13,7 @@ const About = () => {
       </Head>
 
       <Navbar />
-      <section className={styles.mainBody}>
+      <section className={styles.mainBody} style={{gridTemplateRows: '100vh 100vh 100vh'}}>
         <section className={styles.aboutSection}>
           <h1 className={styles.sectionHeader} data-aos={"fade-up"}>
             About Us
@@ -31,21 +31,40 @@ const About = () => {
             data-aos={"fade-up"}
             data-aos-delay={"100"}
           >
-            At KYQN, we're creating a complete system that changes how you
-            connect, take part, and do business in the decentralized world. If
-            you're interested in purchasing our token, we're carefully making a
-            smooth platform that includes many different things like finance and
-            social media, all meant to give you an amazing experience.
+            We are a team of blockchain enthusiasts, developers, and financial
+            experts united by a shared passion for advancing blockchain
+            adoption. With a collective experience spanning various industries,
+            our team brings together technical expertise, security knowledge,
+            and a deep understanding of user needs. We are committed to
+            promoting the values of decentralization, security, and
+            accessibility, and we are excited to contribute to the growth and
+            evolution of the blockchain ecosystem through staking.
           </Slogan>
         </section>
         <section className={styles.aboutSection}>
-          <h1 className={styles.sectionHeader}>Our Story</h1>
+          <h1 className={styles.sectionHeader}>Our Mission</h1>
           <Slogan className={styles.textSmall + " " + styles.sectionText}>
-            KYQN envisions a future where technology thrives through
-            collaboration and decentralization. Our platform utilizes blockchain
-            and cryptocurrency's potential, forming a safe, seamless ecosystem.
-            Here, users craft meaningful bonds, dive into dynamic communities,
-            and uncover limitless opportunities.
+            At KYQN, our mission is to empower individuals to actively
+            participate in the growth and security of blockchain networks
+            through staking. We believe in creating an inclusive and
+            decentralized ecosystem that enables users to stake their digital
+            assets and contribute to the validation and consensus mechanisms of
+            various blockchain platforms. Our aim is to simplify the staking
+            process, making it accessible to both newcomers and experienced
+            crypto enthusiasts.
+          </Slogan>
+        </section>
+        <section className={styles.aboutSection}>
+          <h1 className={styles.sectionHeader}>Our Vision</h1>
+          <Slogan className={styles.textSmall + " " + styles.sectionText}>
+            Our vision is to become the go-to platform for staking solutions,
+            driving the widespread adoption of blockchain technology. We
+            envision a future where staking is not only a means of earning
+            rewards but also a fundamental way for individuals to engage with
+            and support the blockchain projects they believe in. By offering a
+            user-friendly and secure staking platform, we strive to build a
+            bridge between traditional financial systems and the innovative
+            world of decentralized networks.
           </Slogan>
         </section>
       </section>
