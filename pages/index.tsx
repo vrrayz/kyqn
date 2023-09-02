@@ -57,8 +57,8 @@ export default function Home() {
             <HotLinks>
               <HotLink href={"/about"}>About</HotLink>
               <HotLink href={"/tokenomics"}>Tokenomics</HotLink>
-              <HotLink href={"/"}>Docs</HotLink>
-              <HotLink href={"/"}>Contact</HotLink>
+              <HotLink href={"/roadmap"}>Roadmap</HotLink>
+              <HotLink href={"/dapp"}>Dapp</HotLink>
             </HotLinks>
             <Slogan>
               Empower, Stake, Thrive: <br />

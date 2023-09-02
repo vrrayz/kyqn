@@ -78,7 +78,7 @@ const Tokenomics = () => {
     </div>
   );
 };
-const TokenomicsBox = styled.div<{ $width?: number }>`
+export const TokenomicsBox = styled.div<{ $width?: number }>`
   padding: 8px 18px;
   min-width: 150px;
   text-align: center;

@@ -18,9 +18,9 @@ export const MobileNav = ({ isNavToggled }: MobileNavProps) => {
           <Link href={"/"}>Home</Link>
           <Link href={"/about"}>About</Link>
           <Link href={"/tokenomics"}>Tokenomics</Link>
-          <Link href={"/"}>Contact</Link>
-          <Link href={"/"}>Docs</Link>
-          <Link href={"/"}>Dapp</Link>
+          {/* <Link href={"/"}>Contact</Link> */}
+          <Link href={"/roadmap"}>Roadmap</Link>
+          <Link href={"/dapp"}>Dapp</Link>
         </LinksContainer>
         {/* Logo */}
         <LogoArea>
