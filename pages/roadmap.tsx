@@ -17,27 +17,26 @@ const Tokenomics = () => {
 
       <Navbar />
 
-      <section
-        className={styles.mainBody}
-        style={{ gridTemplateRows: "auto" }}
-      >
-        <section className={styles.textCenter} style={{marginTop: "100px"}}>
+      <section className={styles.mainBody} style={{ gridTemplateRows: "auto" }}>
+        <RoadmapSection>
           {roadmaps.map(({ id, title, milestones }) => (
             <>
               <RoadmapBox>
                 <RoadmapSubHeader>Phase {id}</RoadmapSubHeader>
                 <RoadmapHeader>{title}</RoadmapHeader>
-                {milestones.map(({isAchieved, text}) => (
+                {milestones.map(({ isAchieved, text }) => (
                   <RoadmapListItem>
                     <Image
-                      src={isAchieved ? "/assets/kyqn-logo.png":"/assets/kyqn-logo-bw.png"}
+                      src={
+                        isAchieved
+                          ? "/assets/kyqn-logo.png"
+                          : "/assets/kyqn-logo-bw.png"
+                      }
                       alt={"Logo mark"}
                       width={30}
                       height={30}
                     />
-                    <p>
-                      {text}
-                    </p>
+                    <p>{text}</p>
                   </RoadmapListItem>
                 ))}
               </RoadmapBox>
@@ -46,16 +45,38 @@ const Tokenomics = () => {
                 width={25}
                 height={25}
                 alt={"arrow"}
+                className="arrow-img"
               />
             </>
           ))}
-        </section>
+        </RoadmapSection>
       </section>
     </div>
   );
 };
+const RoadmapSection = styled.section`
+  text-align: center;
+  margin-top: 100px;
+
+  @media (min-width: 760px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .arrow-img {
+      display: none;
+    }
+  }
+  @media (min-width: 998px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media (min-width: 1200px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+`;
 const RoadmapBox = styled(TokenomicsBox)`
   width: 320px;
+  margin-bottom: 8px;
+  margin-top: 8px;
 `;
 const RoadmapHeader = styled.h3`
   margin-top: 4px;
