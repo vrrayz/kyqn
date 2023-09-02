@@ -10,7 +10,7 @@
   background-color: rgba(27, 26, 42, 0.75);
   width: 100vw;
   height: 100vh;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .navbar {
@@ -98,4 +98,4 @@
   display: block;
 }
 
-/* REMEBER TO WORK ON THE CONTENT SPACING FOR THE INDEX PAGE */
+/* Responsives */

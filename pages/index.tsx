@@ -16,7 +16,7 @@ export default function Home() {
       <Navbar />
 
       <section className={styles.mainBody}>
-        <div className={styles.heroBody}>
+        <HeroBody>
           {/* Box 1 */}
           <HeroBoxContainer>
             <HeroBox href={"/"}>
@@ -47,7 +47,7 @@ export default function Home() {
               <span>Socials</span>
             </HeroBox>
           </HeroBoxContainer>
-        </div>
+        </HeroBody>
 
         <section className={styles.dFlex}>
           <HotLinkSection
@@ -66,12 +66,36 @@ export default function Home() {
             </Slogan>
           </HotLinkSection>
         </section>
-       
       </section>
     </div>
   );
 }
-
+const HeroBody = styled.div`
+  /* background-color: #fff; */
+  width: 350px;
+  height: 350px;
+  margin: auto;
+  background-image: url(/assets/kyqn-logo.png);
+  background-position: center;
+  padding: 8px;
+  /* margin-top: 40px; */
+  background-size: 200px;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  @media (min-width: 760px) {
+    width: 450px;
+    background-size: calc((57.14285 / 100) * 450px);
+    height: 450px;
+    padding: calc((2.285714 / 100) * 450px);
+  }
+  @media (min-width: 998px) {
+    background-size: calc((57.14285 / 100) * 550px);
+    width: 550px;
+    height: 550px;
+    padding: calc((2.285714 / 100) * 550px);
+  }
+`;
 const HeroBox = styled(Link)`
   display: flex;
   text-align: center;
@@ -95,6 +119,15 @@ const HeroBox = styled(Link)`
   letter-spacing: 1px;
   word-break: break-all;
   padding: 4px;
+  @media (min-width: 760px){
+    width: calc((22.857143 / 100) * 450px);
+    height: calc((22.857143 / 100) * 450px);
+  }
+  @media (min-width: 998px) {
+    width: calc((22.857143 / 100) * 550px);
+    height: calc((22.857143 / 100) * 550px);
+    font-size: 18px;
+  }
 `;
 const HeroBoxContainer = styled.div`
   &:nth-child(2) {
@@ -105,6 +138,9 @@ const HeroBoxContainer = styled.div`
   &:nth-child(2) ${HeroBox} {
     margin: 0;
     margin-top: 8px;
+    @media (min-width: 760px){
+      margin-top: 18px; 
+    }
   }
   &:nth-child(3) {
     display: flex;

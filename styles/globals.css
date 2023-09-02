@@ -5,7 +5,14 @@ body {
   margin: 0px !important;
   font-family: 'Orbitron', sans-serif;
 }
+/* For Webkit-based browsers (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+  width: 8px; /* Adjust the width as needed */
+}
 
+::-webkit-scrollbar-thumb {
+  background: #663399; /* Make the thumb (the draggable part) transparent */
+}
 a {
   color: inherit;
   text-decoration: none;
